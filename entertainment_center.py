@@ -1,46 +1,49 @@
+"""This module will collect all the different Movie instances
+and open the fresh tomatoes page showing the list of the movies
+
+This file is made to be executed with no parameters.
+
+"""
+
 import media
 import fresh_tomatoes
 
-toy_story = media.Movie("Toy Story",
+TOY_STORY = media.Movie("Toy Story",
                         "A story of a boy and his toys that come to life",
                         "http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
                         "https://www.youtube.com/watch?v=KYz2wyBy3kc")
-#print(toy_story.storyline)
 
-avatar = media.Movie("Avatar",
-                    "A marine on an alien planet",
-                    "https://upload.wikimedia.org/wikipedia/sco/b/b0/Avatar-Teaser-Poster.jpg",
-                    "https://www.youtube.com/watch?v=5PSNL1qE6VY")
-#print(avatar.storyline)
-
-#avatar.show_trailer()
+AVATAR = media.Movie("Avatar",
+                     "A marine on an alien planet",
+                     "https://upload.wikimedia.org/wikipedia/sco/b/b0/Avatar-Teaser-Poster.jpg",
+                     "https://www.youtube.com/watch?v=5PSNL1qE6VY")
 
 
-amelie = media.Movie("Amelie",
-                    "The story of a girl and the small important things in life",
-                    "https://upload.wikimedia.org/wikipedia/en/5/53/Amelie_poster.jpg",
-                    "https://www.youtube.com/watch?v=HUECWi5pX7o")
+AMELIE = media.Movie("Amelie",
+                     "The story of a girl and the small important things in life",
+                     "https://upload.wikimedia.org/wikipedia/en/5/53/Amelie_poster.jpg",
+                     "https://www.youtube.com/watch?v=HUECWi5pX7o")
 
-#amelie.show_trailer()
 
-ratatouille = media.Movie("Ratatouille",
-                        "Storyline",
-                        "https://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg",
-                        "https://www.youtube.com/watch?v=c3sBBRxDAqk")
+RATATOUILLE = media.Movie("Ratatouille",
+                          "Storyline",
+                          "https://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg",
+                          "https://www.youtube.com/watch?v=c3sBBRxDAqk")
 
-midnight_in_paris = media.Movie("Midnight in Paris",
+MIDNIGHT_IN_PARIS = media.Movie("Midnight in Paris",
                                 "Storyline",
                                 "http://t3.gstatic.com/images?q=tbn:ANd9GcTk3ssys2bKM5-U6XMgvoD8yVoS5Io2YKg_1xA6x6GA8mKuuqID",
                                 "https://www.youtube.com/watch?v=FAfR8omt-CY")
 
-hunger_games = media.Movie("The Hunger Games",
-                        "Storyline",
-                        "https://upload.wikimedia.org/wikipedia/en/4/42/HungerGamesPoster.jpg",
-                        "https://www.youtube.com/watch?v=mfmrPu43DF8")
+HUNGER_GAMES = media.Movie("The Hunger Games",
+                           "Storyline",
+                           "https://upload.wikimedia.org/wikipedia/en/4/42/HungerGamesPoster.jpg",
+                           "https://www.youtube.com/watch?v=mfmrPu43DF8")
 
+#default_movie = media.Movie("not a film")
 
-movies = [toy_story, avatar, amelie, ratatouille, midnight_in_paris, hunger_games]
-fresh_tomatoes.open_movies_page(movies)
+MOVIES = [TOY_STORY, AVATAR, AMELIE, RATATOUILLE, MIDNIGHT_IN_PARIS, HUNGER_GAMES]
+fresh_tomatoes.open_movies_page(MOVIES)
 
-print (media.Movie.__name__)
-print (media.Movie.__module__)
+#print (media.Movie.__name__)
+#print (media.Movie.__module__)
