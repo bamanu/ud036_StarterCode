@@ -3,6 +3,7 @@
 """
 import webbrowser
 
+
 class Movie():
     """
     This class provides a way to store movie related information
@@ -12,17 +13,23 @@ class Movie():
     def __init__(self,
                  movie_title,
                  movie_storyline="No storyline found",
-                 poster_image="https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg",
-                 trailer_youtube="https://www.youtube.com/watch?v=IYnsfV5N2n8"):
+                 poster_image="https://upload.wikimedia.org/"
+                 "wikipedia/commons/a/ac/No_image_available.svg",
+                 trailer_youtube="https://www.youtube.com/"
+                 "watch?v=IYnsfV5N2n8"):
         """Constructor
 
         Arguments:
             movie_title: the name of the movie
-            movie_storyline: the description of the story. By default: "No storyline found",
-            poster_image: the image of the main poster of the movie. By default: a "no image available" image
-            trailer_youtube: the trailer of the movie in youtube. It has to be the complete url. By default: ASDF Movie 1
+            movie_storyline: the description of the story.
+                 By default: "No storyline found",
+            poster_image: the image of the main poster of the movie.
+                 By default: a "no image available" image
+            trailer_youtube: the trailer of the movie in youtube.
+                 It has to be the complete url.
+                 By default: ASDF Movie 1
 
-            TODO: make a default video with 20 seconds of "no trailer available"
+            TODO:make a default video with 20 seconds of "no trailer available"
         """
         self.title = movie_title
         self.storyline = movie_storyline
