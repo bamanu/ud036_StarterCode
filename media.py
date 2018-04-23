@@ -5,8 +5,20 @@ import webbrowser
 
 
 class Movie():
-    """
-    This class provides a way to store movie related information
+    """This class provides a way to store movie related information
+
+        This class was made to populate the fresh_tomatoes web page.
+        Every movie will have the basic information of the movie,
+        including a poster and a trailer in a video.
+
+
+
+        Args:
+            movie_title (str): the name of the movie
+            movie_storyline (str): the description of the story.
+            poster_image (str): the image of the main poster of the movie.
+            trailer_youtube (str): the trailer of the movie in youtube.
+                 It has to be the complete url.
     """
     VALID_RATINGS = ["G", "PG", "PG-13", "R"]
 
@@ -19,13 +31,13 @@ class Movie():
                  "watch?v=IYnsfV5N2n8"):
         """Constructor
 
-        Arguments:
-            movie_title: the name of the movie
-            movie_storyline: the description of the story.
+        Args:
+            movie_title (str): the name of the movie
+            movie_storyline (str): the description of the story.
                  By default: "No storyline found",
-            poster_image: the image of the main poster of the movie.
+            poster_image (str): the image of the main poster of the movie.
                  By default: a "no image available" image
-            trailer_youtube: the trailer of the movie in youtube.
+            trailer_youtube (str): the trailer of the movie in youtube.
                  It has to be the complete url.
                  By default: ASDF Movie 1
 
@@ -38,7 +50,7 @@ class Movie():
 
     def show_trailer(self):
         """
-        Open the trailer of the movie
+        Open the trailer of the movie in a web browser.
         This trailer has to be previously set in "trailer_youtube_url"
         """
         webbrowser.open(self.trailer_youtube_url)
