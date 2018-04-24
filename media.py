@@ -11,14 +11,6 @@ class Movie():
         Every movie will have the basic information of the movie,
         including a poster and a trailer in a video.
 
-
-
-        Args:
-            movie_title (str): the name of the movie
-            movie_storyline (str): the description of the story.
-            poster_image (str): the image of the main poster of the movie.
-            trailer_youtube (str): the trailer of the movie in youtube.
-                 It has to be the complete url.
     """
     VALID_RATINGS = ["G", "PG", "PG-13", "R"]
 
